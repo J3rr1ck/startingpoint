@@ -17,7 +17,8 @@ description: Gnos Linux -  Immutable linux for Gnos AI Inc.
 # These rpms will be installed from the fedora repository
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
-  - python3-pip # needed for yafti (the first boot installer)
+  - python3-pip 
+  - nano # needed for yafti (the first boot installer)
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
