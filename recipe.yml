@@ -1,5 +1,5 @@
 # The image will be at ghcr.io/yourusername/name
-name: Gnos_Linux_Nvidia
+name: gnos_linux_nvidia
 
 # The native container image to build on top of
 # images. 
