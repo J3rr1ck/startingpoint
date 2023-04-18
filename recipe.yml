@@ -4,13 +4,13 @@ name: gnos_linux_nvidia
 # The native container image to build on top of
 # images. 
 # Warning: Non-uBlue images might function unexpectly
-base-container: ghcr.io/ublue-os/silverblue-nvidia
+base-container: ghcr.io/ublue-os/bluefin-nvidia
 
 # What fedora version to use. Use an explicit version or `latest`.
 # If you use `latest`, you will be automatically updated
 # to the next major version assuming the image you're using as your base container
 # builds with the tag (all uBlue images do this). 
-fedora-version: latest
+fedora-version: 38
 
 # This description will be visible in the container metadata
 description: Gnos Linux -  Immutable linux for Gnos AI Inc.
