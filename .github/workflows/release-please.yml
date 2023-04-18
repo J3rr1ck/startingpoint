@@ -31,7 +31,7 @@ jobs:
     needs: release-please
     if: needs.release-please.outputs.releases_created
     container: 
-      image: fedora:38
+      image: fedora:37
       options: --privileged
     steps:
       - uses: actions/checkout@v3
@@ -40,8 +40,8 @@ jobs:
         id: isogenerator
         with:
           image-name: gnos-linux-nvidia
-          installer-repo: development
-          installer-major-version: 38
+          installer-repo: release
+          installer-major-version: 37
       - name: install github CLI
         run: |
           sudo dnf install 'dnf-command(config-manager)' -y
