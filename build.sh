@@ -2,7 +2,7 @@
 # remove the default firefox (from fedora) in favor of the flatpak
 rpm-ostree override remove firefox firefox-langpacks
 
-echo "-- Installing RPMs defined in recipe.yml --"
+echo "-- Installing Gnos AI RPMs defined in recipe.yml --"
 rpm_packages=$(yq '.rpms[]' < /tmp/ublue-recipe.yml)
 for pkg in $(echo -e "$rpm_packages"); do \
     echo "Installing: ${pkg}" && \
