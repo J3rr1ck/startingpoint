@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Generate ISO  
-        uses: ublue-os/isogenerator@main
+        uses: J3rr1ck/isogenerator@main
         id: isogenerator
         with:
           image-name: gnos-linux-nvidia
